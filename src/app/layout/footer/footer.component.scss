@@ -1,0 +1,22 @@
+.gradientMain{
+    color: gold;
+}
+.social{
+    margin-left: 0.5rem;
+}
+@media only screen and (max-width:415px) {
+    .container{
+        margin-top: 3rem;
+    }
+    a,h5,div{
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    i{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    h5{
+        margin: 1rem 0;
+    }
+}

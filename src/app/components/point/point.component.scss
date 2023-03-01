@@ -1,0 +1,10 @@
+.spacing{
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+}
+@media only screen and (max-width:1025px){
+    .spacing{
+        margin: 0;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,62 @@
+.carFlame {
+    position: relative;
+    width: 150%;
+    height: 550px;
+    transform: translateX(-300px);
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -150px;
+        left: 45%;
+        width: 100%;
+        height: 100%;
+        background: url('../../../assets/1x/prop5.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -1;
+        border-radius: 10px;
+    }
+}
+p{
+    font-size: 14px;
+}
+@media only screen and (max-width:1025px) {
+    .carFlame {
+        transform: translateX(-260px);
+        width: 160%;
+        &::before{
+            top: -200px;
+    left: 25%;
+        }
+    }
+}
+@media only screen and (max-width:769px) {
+    p,h2{
+        text-align: center;
+    }
+    .carFlame {
+        transform: translateX(0);
+        width: 100%;
+        height: 350px;
+        img{
+            object-fit: contain;
+        }
+    }
+    .carFlame::before {
+        top: -100px;
+        left: 55%;
+        width: 50%;
+    }
+}
+@media only screen and (max-width:415px) {
+    .carFlame::before {
+        top: -10px;
+        left: 45%;
+    }
+}

@@ -1,0 +1,56 @@
+<div class="container">
+    <nav *ngIf="showNavbar" #navbar class="navbar navbar-expand-lg navbar-dark fixed-top" [ngClass]="{'scrolled': isScrolled}">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="javascript:void(0)" routerLink="/home">
+                <img src="path/to/logo.png" alt="Logo">
+            </a>
+            <!-- Navbar links -->
+            <div id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link whiteColor poppins-light" routerLink="/home" href="javascript:void(0)">Home</a>
+                  </li>
+                  <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link whiteColor poppins-light" routerLink="about" href="javascript:void(0)">About</a>
+                  </li>
+                  <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link whiteColor poppins-light" routerLink="services" href="javascript:void(0)">Services</a>
+                  </li>
+                  <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link whiteColor poppins-light" routerLink="contact-us" href="javascript:void(0)">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+    <button *ngIf="!showNavbar" class="navbar-toggler fixed-top" type="button" (click)="toggleSidenav()" [ngClass]="{'scrolled': isScrolled}">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div *ngIf="!showNavbar" class="sidenav" [ngClass]="{'show': showSidenav}" [@showHide]="showSidenav ? 'in' : 'out'">
+        <!-- sidenav content -->
+        <ul class="navbar-nav ms-auto h-100 d-flex align-items-center justify-content-center">
+            <li class="nav-item mt-3 mb-3" (click)="toggleSidenav()">
+                <a class="nav-link whiteColor text-center poppins-light" href="javascript:void(0)" routerLink="/home">Home</a>
+            </li>
+            <li class="nav-item mt-3 mb-3" (click)="toggleSidenav()">
+                <a class="nav-link whiteColor text-center poppins-light" href="javascript:void(0)" routerLink="about">About</a>
+            </li>
+            <li class="nav-item mt-3 mb-3" (click)="toggleSidenav()">
+                <a class="nav-link whiteColor text-center poppins-light" href="javascript:void(0)" routerLink="services">Services</a>
+            </li>
+            <li class="nav-item mt-3 mb-3" (click)="toggleSidenav()">
+                <a class="nav-link whiteColor text-center poppins-light" href="javascript:void(0)" routerLink="contact-us">Contact Us</a>
+            </li>
+            <li class="nav-item mt-3 mb-3" (click)="toggleSidenav()">
+                <a class="nav-link whiteColor text-center poppins-light" href="javascript:void(0)" routerLink="terms-and-condition">Terms & Condition</a>
+            </li>
+            <li class="nav-item mt-3 mb-3" (click)="toggleSidenav()">
+                <a class="nav-link whiteColor text-center poppins-light" href="javascript:void(0)" routerLink="privacy-policy">Privacy Policy</a>
+            </li>
+            <li class="nav-item mt-3 mb-3" (click)="toggleSidenav()">
+                <a class="nav-link whiteColor text-center poppins-light" href="javascript:void(0)" routerLink="promotions">Promotions</a>
+            </li>
+        </ul>
+    </div>
+</div>

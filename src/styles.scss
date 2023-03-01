@@ -1,0 +1,202 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #191819 !important;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+//importing owl files
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+// wow css
+@import "~animate.css/animate.css";
+@font-face {
+    font-family: 'poppins-light';
+    src: url(./assets/fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-regular';
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-extrabold';
+    src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+// commons
+.poppins-extrabold {
+    font-family: 'poppins-extrabold';
+}
+
+.poppins-regular {
+    font-family: 'poppins-regular';
+}
+
+.poppins-light {
+    font-family: 'poppins-light';
+}
+
+.blackBg {
+    background-color: black;
+}
+
+.whiteBg {
+    background-color: white;
+}
+
+.whiteColor {
+    color: white;
+}
+
+.blackColor {
+    color: black;
+}
+
+.h100vh {
+    height: 100vh;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.z10 {
+    z-index: 10;
+}
+
+.z0 {
+    z-index: 0;
+}
+
+.border10 {
+    border-radius: 10px;
+}
+
+.smallFont {
+    font-size: 12px;
+}
+.no-text-decoration{
+    text-decoration: none;
+}
+.anchor:hover{
+    color: #ffbf3c;
+}
+// .bigFont{
+//     font-size: 4vw;
+// }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: unsetg; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ffbf3c, #ffd784); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #ffbf3c, #ffd784); 
+  }
+.getQuoteBtn {
+    padding: 10px 30px;
+    width: fit-content;
+    border: none;
+    background: #231F20;
+    cursor: pointer;
+}
+.btn-hover {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    padding: 10px 60px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 5px;
+    moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    width: fit-content;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #ffbf3c, #ffd784, #ffc50c, #fff, #ffbf3e, #ffd784);
+    // box-shadow: 0 4px 15px 0 rgb(255 196 76 / 47%);
+}
+.owl-theme {
+    .owl-dots {
+        display: none !important;
+    }
+
+    .owl-nav {
+        background: none !important;
+    }
+
+    .owl-prev,
+    .owl-next {
+        position: absolute !important;
+        background: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none !important;
+    }
+
+    .owl-prev {
+        left: -40px !important;
+    }
+
+    .owl-next {
+        right: -40px !important;
+    }
+    .owl-theme .owl-nav [class*=owl-]{
+        background: none;
+    }
+}
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(0.99);
+        opacity: 0.1;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@media only screen and (max-width:765px) {
+
+    .owl-prev,
+    .owl-next {
+        display: none !important;
+    }
+}

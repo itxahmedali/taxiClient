@@ -1,0 +1,126 @@
+<!-- banner -->
+<app-banner [imageUrl]="'assets/1x/homeBg.png'" className="homeProp"></app-banner>
+<!-- points -->
+<div class="container pointSection">
+    <div class="row">
+        <div class="col-sm-4 d-flex justify-content-center align-items-center wow animate__animated animate__fadeInLeft" ><app-point [imageUrl]="'assets/1x/point1.png'" heading="Easy To Book" text="lorem ipsume lorem ipsume lorem ipsume lorem ipsume lorem ipsume lorem ipsume lorem ipsume "></app-point></div>
+        <div class="col-sm-4 d-flex justify-content-center align-items-center wow animate__animated animate__fadeInDown" ><app-point [imageUrl]="'assets/1x/point2.png'" heading="100% Authentic" text="lorem ipsume lorem ipsume lorem ipsume lorem ipsume lorem ipsume lorem ipsume lorem ipsume "></app-point></div>
+        <div class="col-sm-4 d-flex justify-content-center align-items-center wow animate__animated animate__fadeInRight" ><app-point [imageUrl]="'assets/1x/point3.png'" heading="Refund Policy" text="lorem ipsume lorem ipsume lorem ipsume lorem ipsume lorem ipsume lorem ipsume lorem ipsume "></app-point></div>
+    </div>
+</div>
+<!-- services -->
+<div class="mt-5">
+    <h2 class="text-center poppins-extrabold whiteColor headingShade wow animate__animated animate__fadeInUp" >Services</h2>
+    <div class="services">
+        <div class="container">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide let-index="index">
+                    <div class="slideContent border10" [ngClass]="{'activeSlide': index == activeSlide}" style="background: url(../../../assets/1x/car3.png);">
+                        <h3 class="mb-0 whiteColor">Pick up 01</h3>
+                        <h5 class="mb-0 whiteColor">2-6 Persons</h5>
+                        <p class="mb-0 whiteColor smallFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic totam facilis. Amet quas consequuntur aliquid delectus laudantium impedit ut quo voluptates, est corrupti! Dolore molestias rem animi deleniti veniam!</p>
+                        <button
+                         class="btn-hover color-1  border10 poppins-regular">Book Now</button>
+                    </div>
+                </ng-template>  
+                <ng-template carouselSlide let-index="index">
+                    <div class="slideContent border10" [ngClass]="{'activeSlide': index == activeSlide}" style="background: url(../../../assets/1x/car4.png);">
+                        <h3 class="mb-0 whiteColor">Pick up 01</h3>
+                        <h5 class="mb-0 whiteColor">2-6 Persons</h5>
+                        <p class="mb-0 whiteColor smallFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic totam facilis. Amet quas consequuntur aliquid delectus laudantium impedit ut quo voluptates, est corrupti! Dolore molestias rem animi deleniti veniam!</p>
+                        <button class="btn-hover color-1  border10 poppins-regular">Book Now</button>
+                    </div>
+                </ng-template>  
+                <ng-template carouselSlide let-index="index">
+                    <div class="slideContent border10" [ngClass]="{'activeSlide': index == activeSlide}" style="background: url(../../../assets/1x/car5.png);">
+                        <h3 class="mb-0 whiteColor">Pick up 01</h3>
+                        <h5 class="mb-0 whiteColor">2-6 Persons</h5>
+                        <p class="mb-0 whiteColor smallFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic totam facilis. Amet quas consequuntur aliquid delectus laudantium impedit ut quo voluptates, est corrupti! Dolore molestias rem animi deleniti veniam!</p>
+                        <button class="btn-hover color-1  border10 poppins-regular">Book Now</button>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide let-index="index">
+                    <div class="slideContent border10" [ngClass]="{'activeSlide': index == activeSlide}" style="background: url(../../../assets/1x/car3.png);">
+                        <h3 class="mb-0 whiteColor">Pick up 01</h3>
+                        <h5 class="mb-0 whiteColor">2-6 Persons</h5>
+                        <p class="mb-0 whiteColor smallFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic totam facilis. Amet quas consequuntur aliquid delectus laudantium impedit ut quo voluptates, est corrupti! Dolore molestias rem animi deleniti veniam!</p>
+                        <button class="btn-hover color-1  border10 poppins-regular">Book Now</button>
+                    </div>
+                </ng-template>  
+                <ng-template carouselSlide let-index="index">
+                    <div class="slideContent border10" [ngClass]="{'activeSlide': index == activeSlide}" style="background: url(../../../assets/1x/car4.png);">
+                        <h3 class="mb-0 whiteColor">Pick up 01</h3>
+                        <h5 class="mb-0 whiteColor">2-6 Persons</h5>
+                        <p class="mb-0 whiteColor smallFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic totam facilis. Amet quas consequuntur aliquid delectus laudantium impedit ut quo voluptates, est corrupti! Dolore molestias rem animi deleniti veniam!</p>
+                        <button class="btn-hover color-1  border10 poppins-regular">Book Now</button>
+                    </div>
+                </ng-template>  
+                <ng-template carouselSlide let-index="index">
+                    <div class="slideContent border10" [ngClass]="{'activeSlide': index == activeSlide}" style="background: url(../../../assets/1x/car5.png);">
+                        <h3 class="mb-0 whiteColor">Pick up 01</h3>
+                        <h5 class="mb-0 whiteColor">2-6 Persons</h5>
+                        <p class="mb-0 whiteColor smallFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic totam facilis. Amet quas consequuntur aliquid delectus laudantium impedit ut quo voluptates, est corrupti! Dolore molestias rem animi deleniti veniam!</p>
+                        <button class="btn-hover color-1  border10 poppins-regular">Book Now</button>
+                    </div>
+                </ng-template>  
+                <ng-template carouselSlide let-index="index">
+                    <div class="slideContent border10" [ngClass]="{'activeSlide': index == activeSlide}" style="background: url(../../../assets/1x/car3.png);">
+                        <h3 class="mb-0 whiteColor">Pick up 01</h3>
+                        <h5 class="mb-0 whiteColor">2-6 Persons</h5>
+                        <p class="mb-0 whiteColor smallFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic totam facilis. Amet quas consequuntur aliquid delectus laudantium impedit ut quo voluptates, est corrupti! Dolore molestias rem animi deleniti veniam!</p>
+                        <button class="btn-hover color-1  border10 poppins-regular">Book Now</button>
+                    </div>
+                </ng-template>  
+                <ng-template carouselSlide let-index="index">
+                    <div class="slideContent border10" [ngClass]="{'activeSlide': index == activeSlide}" style="background: url(../../../assets/1x/car4.png);">
+                        <h3 class="mb-0 whiteColor">Pick up 01</h3>
+                        <h5 class="mb-0 whiteColor">2-6 Persons</h5>
+                        <p class="mb-0 whiteColor smallFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic totam facilis. Amet quas consequuntur aliquid delectus laudantium impedit ut quo voluptates, est corrupti! Dolore molestias rem animi deleniti veniam!</p>
+                        <button class="btn-hover color-1  border10 poppins-regular">Book Now</button>
+                    </div>
+                </ng-template>  
+                <ng-template carouselSlide let-index="index">
+                    <div class="slideContent border10" [ngClass]="{'activeSlide': index == activeSlide}" style="background: url(../../../assets/1x/car5.png);">
+                        <h3 class="mb-0 whiteColor">Pick up 01</h3>
+                        <h5 class="mb-0 whiteColor">2-6 Persons</h5>
+                        <p class="mb-0 whiteColor smallFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic totam facilis. Amet quas consequuntur aliquid delectus laudantium impedit ut quo voluptates, est corrupti! Dolore molestias rem animi deleniti veniam!</p>
+                        <button class="btn-hover color-1  border10 poppins-regular">Book Now</button>
+                    </div>
+                </ng-template>  
+              </owl-carousel-o>
+        </div>
+    </div>
+</div>
+<!-- we pick you section -->
+<div class="wePicSection mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 wow animate__animated animate__fadeInLeft" >
+                <img src="assets/1x/car6.png" width="100%" height="100%" class="wePickImg" alt="">
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center flex-column wow animate__animated animate__fadeInRight" >
+                <h1 class="whiteColor poppins-extrabold bigFont">We pick up where you leave off.</h1>
+                <button class="btn-hover color-1  border10 poppins-regular mt-5">Book a ride now</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- aboutUs -->
+<div class="about mb-5">
+    <h2 class="text-center poppins-extrabold whiteColor headingShade aboutshade mb-5 wow animate__animated animate__fadeInUp" >About Us</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 wow animate__animated animate__fadeInLeft" >
+                <div class="aboutImg">
+                    <img src="assets/1x/about.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center wow animate__animated animate__fadeInRight" >
+                <h4 class="whiteColor poppins-extrabold">Our Story</h4>
+                <p class="whiteColor poppins-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto in laboriosam at optio. Ipsa, tempore itaque pariatur earum commodi possimus eos ex beatae odio doloribus dicta dolores debitis voluptates perferendis recusandae, cum assumenda omnis mollitia nostrum porro quod quibusdam delectus! Commodi porro eligendi doloremque, molestias sit delectus consectetur saepe nemo?</p>
+                <button class="btn-hover color-1 border10 poppins-regular">Read More</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-get-in-touch></app-get-in-touch>
